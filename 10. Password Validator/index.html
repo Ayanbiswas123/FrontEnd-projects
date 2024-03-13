@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .main-div {
+        border: 1px solid black;
+        padding: 100px;
+        border-radius: 5px;
+        margin: 5px;
+     
+    }
+
+    .main-div:hover {
+        border: 2px solid purple;
+        /* background-color: red; */
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    input {
+        font-size: 20px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    input:hover {
+        border-color: rgb(34, 178, 154);
+        border-radius: 5px;
+    }
+    #sub{
+        align-items: center;
+        padding: 5px;
+        border-radius: 5px;
+        margin-left: 40%;
+    }
+</style>
+<body>
+    <div class="main-div">
+        <label for="name">Enter the user name</label>
+        <br>
+        <input type="text" placeholder="Enter Name">
+        <br>
+        <label for="password">Enter the password</label>
+        <br>
+        <input type="password" placeholder="Enter password" id="password1">
+        <br>
+        <input type="checkbox" id="check">Show Password
+
+        <br>
+        <label for="re-password">Re-Enter Password</label>
+        <br>
+        <input type="password" placeholder="Re-Enter Password" id="re-password2">
+        <br>
+        <input type="button" value="submit" id="sub">
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
