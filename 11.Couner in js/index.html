@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter project</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            /* font-family: 'Courier New', Courier, monospace; */
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: auto;
+            width: 300px;
+            border:1px solid black;
+            padding:10px;
+            margin: 10px;
+        }
+
+        input{
+            padding: 2px;
+            margin: 2px;
+        }
+        label{
+            border: 1px solid black;
+            padding: 2px;
+            min-width: 10px;
+            margin: 3px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="button" value="Decrement by 1" id="decrementBTN">
+        <label for="" id="value">1</label>
+        <input type="button" value="Increment by 1" id="incrementBTN">
+        <br>
+        <input type="button" value="Reset" id="resetBTN">
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
