@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div {
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            height: auto;
+            width: 350px;
+            padding: 10px;
+
+        }
+       
+
+        input,label,select {
+            padding: 10px;
+            width: 80%;
+            margin: 0;
+        }
+
+        #btn {
+            width: 30%;
+            text-align: center;
+            background-color: #77b8e4;
+            border-radius: 5px;
+            border: 0;
+            padding: 5px;
+        }
+        #total{
+            text-align: center;
+            font-weight: 500;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <label for="cars">Choose a car:</label>
+
+        <select name="cars" id="cars" placeholder="Select...">
+            <option value="" disabled selected>Select...</option>
+            <option value="Economy">Economy</option>
+            <option value="Midsize">Midsize</option>
+            <option value="Luxury">Luxury</option>
+        </select>
+        <br>
+        <label for="days">Select Days:</label>
+        <input type="text" placeholder="Input Days..." id="days">
+        <br>
+        <input type="button" value="Calculate Rent" id="btn">
+        <br>
+        <h1 id="totalvalue">₹ 0</h1>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

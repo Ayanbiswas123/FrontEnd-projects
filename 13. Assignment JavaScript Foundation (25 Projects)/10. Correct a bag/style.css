@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --------------- NAV BAR ------------- */
+nav {
+    height: 10vh;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.486);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 35px;
+}
+
+nav ul li {
+    position: relative;
+    list-style: none;
+    cursor: pointer;
+}
+
+nav ul li::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 5px;
+    background-color: #fff;
+    left: 0;
+    bottom: -5px;
+    border-radius: 5px;
+    transition: .3s all ease-in-out;
+}
+
+nav ul li:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+nav ul a:hover{
+    color: #fff;
+}
+
+nav .nav-search{
+    display: flex;
+    gap: 50px;
+}
+
+.div2{
+    display: flex;
+    gap: 15px;
+}
+
+.div2 input{
+    height: 30px;
+    width: 90%;
+}
+.div2 button{
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+
+
+
+
+.ul2{
+    position:absolute;
+    right: 30px;
+    gap: 20px;
+}
+
+/* --------main--------- */
+main{
+    display: flex;
+
+}
+.left-main{
+    /* border: 2px solid black; */
+    width: 65vw;
+    height: 90vh;
+    padding: 5px;
+    overflow: scroll;
+}
+.main-main{
+    
+    width: 5vw;
+    height: 90vh;
+    
+    
+}
+.right-main{
+    border: 2px solid black;
+    width: 30vw;
+    height: 75vh;
+    overflow: auto;
+    
+}
+.main-right-total{
+    position: absolute;
+    right: 2px;
+    top: 520px;
+    width: 401px;
+    height: 50px;
+    border: 1px solid red;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+/* ------------------main left --------------------- */
+main .left-main ul{
+    display:flex;
+    flex-wrap: wrap;
+    overflow: auto;
+
+}
+
+main .left-main ul li{
+    list-style: none;
+    
+}
+
+main .left-main ul li div {
+    width: 180px; 
+    height: 180px; 
+    border: 1px solid red;
+    border-radius: 10px;
+    margin: 10px;
+
+}
+main .left-main ul li div img{
+    height: 100px;
+    width: 178px;
+    border-radius:8px;
+}
+
+main .left-main ul li div ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+main .left-main ul li div ul li{
+    list-style: none;
+}
+main .left-main ul li div ul li button{
+
+    font-size: 18px;
+    border: 1px solid rgb(224, 216, 216);
+    margin: 1px;
+    padding: 3px;
+    border-radius: 3px;
+    font-weight: 530;
+}
+
+main .left-main ul li div ul li:last-child button{
+    
+    border: 1px solid #ff9f00;
+    background-color: #ff9f00;
+    font-weight: 200;
+}
+
+
+/* ------------main right ------------------ */
+
+
+main .right-main ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+main .right-main ul li {
+    height: 10vh;
+    width: 300px;
+    border: 1px solid red;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px;
+    
+}
+main .right-main ul li img{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ff9f00;
+    border-radius: 50%;
+}
+main .right-main ul li span{
+    
+    border-radius: 5px;
+    height: 30px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9e0e0;
+}
+
+
+/* -----------------main-right-total------------ */
+#main-total{
+    background-color: rgb(29, 198, 204);
+    padding: 10px;
+}
+.main-right-total span{
+    min-width:auto ;
+    height: 35px;
+    padding: 1px;
+    background-color: #aad45b;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+
+}
+.main-right-total #pay{
+    background-color: #ff9f00;
+    width: 100px;
+}
+
+/* ---------------footer -------------------------- */
+footer{
+    background-color: #5f5b5b;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer .footer-logo ul{
+    display: flex;
+    align-items:center;
+    justify-content:right;
+    gap: 35px;
+    /* border: 1px solid red; */
+    position: relative;
+    left: 250px;
+}
+
+footer .footer-logo ul li {
+    list-style: none;
+    cursor: pointer;
+}
+
+footer .footer-logo ul li a{
+    font-size: 20px;
+    color: rgb(229, 236, 236);
+}

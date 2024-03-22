@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Spliter</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #main-div {
+            height: 80vh;
+            display:flex;
+            flex-direction:row;
+        }
+
+        #item-ul {
+            height: 80vh;
+            width: 70vw;
+            border: 1px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: auto;
+            gap: 10px;
+            padding: 10px;
+        }
+        
+
+        li {
+            list-style: none;
+            height: 250px;
+            width: 250px;
+            border: 1px solid black;
+            border-radius: 5px;
+
+        }
+
+        li img {
+            height: 200px;
+            width: 248px;
+            border-radius: 5px;
+        }
+
+        span {
+            height: 20px;
+            width: 20px;
+            border: 1px solid red;
+            margin-left: 22%;
+            padding: 5px;
+            border-radius: 5px;
+            position: relative;
+            top: 10px;
+            cursor: pointer;
+        }
+        /* ----------------------- */
+        #item-total{
+            height: 80vh;
+            width: 20vw;
+            border: 1px solid red;
+            overflow: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top: 1px;
+            left: 1200px;
+        }
+        .lileft{
+            list-style: none;
+            height: 80px;
+            width: 250px;
+            border: 1px solid black;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #img2{
+            height: 78px;
+            width: 78px;
+            border-radius: 5px;
+        }
+        .add2, #price2{
+            height: 50px;
+            width: 60px;
+            gap: 1px;
+            position: relative;
+            margin-left:15px;
+            padding: 2px;
+            text-align: center;
+            padding-top: 12px;
+            border-radius: 5px;
+            top: 0;
+        }
+        #total{
+            position: absolute;
+            border: 1px solid rgb(149, 218, 21);
+            height: 100px;
+            width: 500px;
+            top: 550px;
+            left: 600px;
+
+        }
+        input{
+            width: 200px;
+            height: 30px;
+            margin: 5px;
+            margin-left: 25px;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+
+    </nav>
+    <main>
+        <div class="main-div">
+            <ul id="item-ul">
+            </ul>
+            <ul id="item-total">
+                
+            </ul>
+            <div id="total">
+                <input type="text" placeholder="Enter number of people" id="inputdata">
+                <input type="button" value="Calculate" id="submit">
+                <h1 id="out">0</h1>
+            </div>
+        </div>
+        
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>

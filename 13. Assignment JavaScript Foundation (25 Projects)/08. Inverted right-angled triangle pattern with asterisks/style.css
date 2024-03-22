@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+/* ------------------------ nav bar ---------------------------- */
+nav{
+    background-color: rgba(255, 0, 0, 0.514);
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    height: 70px;
+    
+}
+
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------ MAIN SECTION ---------------------------- */
+
+#main {
+
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+   
+    position: relative;
+    top: 10px;
+
+}
+
+div .nav {
+    height: 50vh;
+    width: 50vw;
+    border-radius: 7px;
+    background-color: transparent;
+    padding: 1%;
+    
+
+}
+
+input{
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 250px;
+    height: 30px;
+    border-radius: 2%;
+}
+
+button{
+    margin-top: 10px;
+    margin-left: 35px;
+    padding: 2%;
+    border-radius: 7px;
+    border: none;
+    background-color:#fff;
+}
+
+#output{
+    font-size: 25px;
+}
